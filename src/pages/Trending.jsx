@@ -14,7 +14,7 @@ const Trending = () => {
             >
                 {trendData &&
                     trendData.map(coin => (
-                        <TrendingCoin key={coin.coin_id} data={coin.item} />
+                        <TrendingCoin key={coin.item.id} data={coin.item} />
                     ))}
                 <button
                     onClick={resetTrendingResult}
@@ -22,7 +22,7 @@ const Trending = () => {
                 absolute right-0 -top-10'
                 >
                     <svg
-                        className='w-full h-full fill-cyan'
+                        className='w-full h-full fill-blue'
                         xmlns='http://www.w3.org/2000/svg'
                         width='1em'
                         height='1em'

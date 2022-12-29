@@ -34,7 +34,7 @@ const SearchInput = ({ handleSearch }) => {
             >
                 <input
                     className='w-full rounded bg-gray-200 placeholder:text-gray-100 pl-2 required outline-0
-    border-transparent focus:border-cyan border'
+    border-transparent focus:border-blue border'
                     placeholder='Search...'
                     type='text'
                     name='search'
@@ -78,7 +78,7 @@ const SearchInput = ({ handleSearch }) => {
                     ) : (
                         <div className='w-full h-full flex justify-center items-center'>
                             <div
-                                className='w-8 h-8 border-4 border-cyan rounded-full border-b-gray-200 
+                                className='w-8 h-8 border-4 border-blue rounded-full border-b-gray-200 
                             animate-spin'
                                 role='status'
                             />

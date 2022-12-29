@@ -46,7 +46,7 @@ export const StorageProvider = ({ children }) => {
     };
 
     const resetSavedData = () => {
-        getSavedData();
+        setSavedData();
     };
 
     useEffect(() => {

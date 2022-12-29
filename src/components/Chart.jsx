@@ -16,7 +16,7 @@ function CustomTooltip({ payload, label, active, currency }) {
     if (active) {
         return (
             <div className='custom-tooltip'>
-                <p className='label text-sm text-cyan'>{`${label} : ${new Intl.NumberFormat(
+                <p className='label text-sm text-blue'>{`${label} : ${new Intl.NumberFormat(
                     'en-IN',
                     {
                         style: 'currency',
@@ -35,7 +35,7 @@ const ChartComponent = ({ data, currency, type }) => {
                 <Line
                     type='monotone'
                     dataKey={type}
-                    stroke='#14ffec'
+                    stroke='#1d9bf0'
                     strokeWidth={'1px'}
                 />
                 <CartesianGrid stroke='#323232' />
@@ -91,7 +91,7 @@ const Chart = ({ id }) => {
                 <button
                     className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
                         type === 'prices'
-                            ? 'bg-cyan text-cyan'
+                            ? 'bg-blue text-blue'
                             : 'bg-gray-200 text-gray-100'
                     }`}
                     onClick={() => setType('prices')}
@@ -101,7 +101,7 @@ const Chart = ({ id }) => {
                 <button
                     className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
                         type === 'market_caps'
-                            ? 'bg-cyan text-cyan'
+                            ? 'bg-blue text-blue'
                             : 'bg-gray-200 text-gray-100'
                     }`}
                     onClick={() => setType('market_caps')}
@@ -111,7 +111,7 @@ const Chart = ({ id }) => {
                 <button
                     className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
                         type === 'total_volumes'
-                            ? 'bg-cyan text-cyan'
+                            ? 'bg-blue text-blue'
                             : 'bg-gray-200 text-gray-100'
                     }`}
                     onClick={() => setType('total_volumes')}
@@ -122,7 +122,7 @@ const Chart = ({ id }) => {
                     <button
                         className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
                             days === 7
-                                ? 'bg-cyan text-cyan'
+                                ? 'bg-blue text-blue'
                                 : 'bg-gray-200 text-gray-100'
                         }`}
                         onClick={() => setDays(7)}
@@ -132,7 +132,7 @@ const Chart = ({ id }) => {
                     <button
                         className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
                             days === 14
-                                ? 'bg-cyan text-cyan'
+                                ? 'bg-blue text-blue'
                                 : 'bg-gray-200 text-gray-100'
                         }`}
                         onClick={() => setDays(14)}
@@ -142,7 +142,7 @@ const Chart = ({ id }) => {
                     <button
                         className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
                             days === 30
-                                ? 'bg-cyan text-cyan'
+                                ? 'bg-blue text-blue'
                                 : 'bg-gray-200 text-gray-100'
                         }`}
                         onClick={() => setDays(30)}

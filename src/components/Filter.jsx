@@ -42,7 +42,7 @@ const Filter = () => {
                         type='text'
                         placeholder='usd'
                         className='w-16 bg-gray-200 rounded p-1 sm:p-0 sm:pl-2 placeholder:text-gray-100 required outline-0
-                        border border-transparent sm:text-base text-sm focus:border-cyan leading-4'
+                        border border-transparent sm:text-base text-sm focus:border-blue leading-4'
                         name='currency'
                     />
                     <button type='submit' className='ml-1 cursor-pointer'>
@@ -86,7 +86,7 @@ const Filter = () => {
                 absolute right-0 top-0 sm:relative'
                 >
                     <svg
-                        className='w-full h-full fill-cyan'
+                        className='w-full h-full fill-blue'
                         xmlns='http://www.w3.org/2000/svg'
                         width='1em'
                         height='1em'

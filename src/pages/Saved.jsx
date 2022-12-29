@@ -23,8 +23,8 @@ const SavedButton = ({ data }) => {
         >
             <svg
                 className={`w-[1.5rem] ml-1.5 ${
-                    allCoins.includes(data.id) ? 'fill-cyan' : 'fill-gray-100'
-                } hover:fill-cyan`}
+                    allCoins.includes(data.id) ? 'fill-blue' : 'fill-gray-100'
+                } hover:fill-blue`}
                 width='30'
                 height='30'
                 viewBox='0 0 30 30'
@@ -167,7 +167,7 @@ const Saved = () => {
                         </tbody>
                     </table>
                 ) : (
-                    <h1 className='min-h-[60vh] text-cyan text-lg flex items-center justify-center'>
+                    <h1 className='min-h-[60vh] text-blue text-lg flex items-center justify-center'>
                         There is no data to display.
                     </h1>
                 )}
@@ -177,7 +177,7 @@ const Saved = () => {
                 absolute right-0 -top-10'
                 >
                     <svg
-                        className='w-full h-full fill-cyan'
+                        className='w-full h-full fill-blue'
                         xmlns='http://www.w3.org/2000/svg'
                         width='1em'
                         height='1em'

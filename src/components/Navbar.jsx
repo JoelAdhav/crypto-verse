@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='lg:w-[40%] sm:w-[80%] w-[90%] mt-20 flex justify-around lg:mt-16 sm:mt-24 align-middle border border-solid border-cyan rounded-md sm:rounded-lg'>
+        <nav className='lg:w-[40%] sm:w-[80%] w-[90%] mt-7 flex justify-around align-middle border border-solid border-blue rounded-md sm:rounded-lg'>
             <NavLink
                 to='/'
                 end
@@ -11,8 +11,8 @@ const Navbar = () => {
                     return `w-full text-sm md:text-base text-center sm:my-auto font-nunito m-1.5 sm:m-2.5 
                     ${
                         isActive
-                            ? 'bg-cyan text-gray-300'
-                            : 'bg-gray-200 text-gray-100 hover:text-cyan active:bg-cyan active:text-gray-300'
+                            ? 'bg-blue text-gray-300'
+                            : 'bg-gray-200 text-gray-100 hover:text-blue active:bg-blue active:text-gray-300'
                     }
                  border-0 cursor-pointer rounded capitalize font-semibold`;
                 }}
@@ -25,8 +25,8 @@ const Navbar = () => {
                     return `w-full text-sm md:text-base text-center font-nunito m-1.5 sm:m-2.5 
                     ${
                         isActive
-                            ? 'bg-cyan text-gray-300'
-                            : 'bg-gray-200 text-gray-100 hover:text-cyan active:bg-cyan active:text-gray-300'
+                            ? 'bg-blue text-gray-300'
+                            : 'bg-gray-200 text-gray-100 hover:text-blue active:bg-blue active:text-gray-300'
                     }
                  border-0 cursor-pointer rounded capitalize
                  font-semibold`;
@@ -40,8 +40,8 @@ const Navbar = () => {
                     return `w-full text-sm md:text-base text-center font-nunito m-1.5 sm:m-2.5 
                     ${
                         isActive
-                            ? 'bg-cyan text-gray-300'
-                            : 'bg-gray-200 text-gray-100 hover:text-cyan active:bg-cyan active:text-gray-300'
+                            ? 'bg-blue text-gray-300'
+                            : 'bg-gray-200 text-gray-100 hover:text-blue active:bg-blue active:text-gray-300'
                     }
                  border-0 cursor-pointer rounded capitalize
                  font-semibold`;

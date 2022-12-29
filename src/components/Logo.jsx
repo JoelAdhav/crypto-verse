@@ -7,7 +7,7 @@ const Logo = () => {
         <div>
             <Link
                 to='/'
-                className='absolute top-[1.5rem] left-[1.5rem] [text-decoration:none] text-lg text-cyan 
+                className='mt-10 [text-decoration:none] text-lg text-gray-100 
                 flex flex-row items-center'
             >
                 <img src={logoSvg} className='h-10 w-10' alt='' />

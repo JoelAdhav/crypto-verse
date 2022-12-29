@@ -19,7 +19,7 @@ const TrendingCoin = ({ data }) => {
                         <span className='text-gray-100 capitalize'>
                             name:&nbsp;{' '}
                         </span>
-                        <span className='text-cyan'>{data.name}</span>
+                        <span className='text-blue'>{data.name}</span>
                         <img
                             src={data.small}
                             alt={data.name}
@@ -31,7 +31,7 @@ const TrendingCoin = ({ data }) => {
                         <span className='text-gray-100 capitalize'>
                             market cap rank:&nbsp;
                         </span>
-                        <span className='text-cyan'>
+                        <span className='text-blue'>
                             {data.market_cap_rank}
                         </span>
                     </h3>
@@ -40,7 +40,7 @@ const TrendingCoin = ({ data }) => {
                         <span className='text-gray-100 capitalize'>
                             price(in btc):&nbsp;
                         </span>
-                        <span className='text-cyan'>
+                        <span className='text-blue'>
                             {new Intl.NumberFormat('en-IN', {
                                 style: 'currency',
                                 currency: 'btc',
@@ -53,7 +53,7 @@ const TrendingCoin = ({ data }) => {
                         <span className='text-gray-100 capitalize'>
                             score:&nbsp;
                         </span>
-                        <span className='text-cyan'>{data.score}</span>
+                        <span className='text-blue'>{data.score}</span>
                     </h3>
 
                     <img
@@ -66,7 +66,7 @@ const TrendingCoin = ({ data }) => {
             ) : (
                 <div className='w-full h-full flex justify-center items-center'>
                     <div
-                        className='w-8 h-8 border-4 border-cyan rounded-full border-b-gray-200 
+                        className='w-8 h-8 border-4 border-blue rounded-full border-b-gray-200 
                             animate-spin'
                         role='status'
                     />

@@ -35,7 +35,7 @@ const PerPage = () => {
                 placeholder='10'
                 className='w-8 h-6 bg-gray-200 rounded pl-2 placeholder:text-gray-100 required 
                     outline-0 hover:appereance-none appearance-none border border-transparent 
-                    focus:border-cyan leading-4 text-sm'
+                    focus:border-blue leading-4 text-sm'
                 name='perpage'
             />
             <button type='submit' className='ml-1 cursor-pointer'>
@@ -91,7 +91,7 @@ const Pagination = () => {
                     <li className='flex items-center'>
                         <button
                             onClick={prev}
-                            className='outline-0 hover:text-cyan w-8'
+                            className='outline-0 hover:text-blue w-8'
                         >
                             <img
                                 className='w-full h-auto rotate-180'
@@ -104,7 +104,7 @@ const Pagination = () => {
                         <li>
                             <button
                                 onClick={multiStepPrev}
-                                className='outline-0 hover:text-cyan rounded-full w-8 h-8 flex items-center
+                                className='outline-0 hover:text-blue text-gray-100 rounded-full w-8 h-8 flex items-center
                         justify-center text-lg'
                             >
                                 ...
@@ -116,7 +116,7 @@ const Pagination = () => {
                         <li>
                             <button
                                 onClick={prev}
-                                className='outline-0 bg-gray-200 mx-1.5  hover:text-cyan rounded-full w-8 h-8 flex items-center
+                                className='outline-0 bg-gray-200 mx-1.5 text-gray-100 hover:text-blue rounded-full w-8 h-8 flex items-center
                         justify-center'
                             >
                                 {page - 1}
@@ -126,7 +126,7 @@ const Pagination = () => {
                     <li>
                         <button
                             disabled
-                            className='outline-0 mx-1.5 bg-cyan text-gray-300 rounded-full w-8 h-8 flex items-center
+                            className='outline-0 mx-1.5 text-gray-100 bg-blue text-gray-300 rounded-full w-8 h-8 flex items-center
                         justify-center'
                         >
                             {page}
@@ -137,7 +137,7 @@ const Pagination = () => {
                         <li>
                             <button
                                 onClick={next}
-                                className='outline-0 bg-gray-200 mx-1.5 hover:text-cyan rounded-full w-8 h-8 flex items-center
+                                className='outline-0 bg-gray-200 text-gray-100 mx-1.5 hover:text-blue rounded-full w-8 h-8 flex items-center
                         justify-center'
                             >
                                 {page + 1}
@@ -149,7 +149,7 @@ const Pagination = () => {
                         <li>
                             <button
                                 onClick={multiStepNext}
-                                className='outline-0 hover:text-cyan rounded-full w-8 h-8 flex items-center
+                                className='outline-0 hover:text-blue text-gray-100 rounded-full w-8 h-8 flex items-center
                         justify-center text-lg'
                             >
                                 ...
@@ -161,7 +161,7 @@ const Pagination = () => {
                         <li>
                             <button
                                 onClick={() => setPage(TotalNumber)}
-                                className='outline-0 bg-gray-200 mx-1.5 hover:text-cyan rounded-full w-8 h-8 flex items-center
+                                className='outline-0 bg-gray-200 text-gray-100 mx-1.5 hover:text-blue rounded-full w-8 h-8 flex items-center
                         justify-center'
                             >
                                 {TotalNumber}
@@ -171,7 +171,7 @@ const Pagination = () => {
                     <li>
                         <button
                             onClick={next}
-                            className='outline-0 hover:text-cyan w-8'
+                            className='outline-0 hover:text-blue w-8'
                         >
                             <img
                                 className='w-full h-auto'

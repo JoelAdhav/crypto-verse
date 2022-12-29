@@ -24,8 +24,8 @@ const SavedButton = ({ data }) => {
         >
             <svg
                 className={`w-[1.5rem] ml-1.5 ${
-                    allCoins.includes(data.id) ? 'fill-cyan' : 'fill-gray-100'
-                } hover:fill-cyan`}
+                    allCoins.includes(data.id) ? 'fill-blue' : 'fill-gray-100'
+                } hover:fill-blue`}
                 width='30'
                 height='30'
                 viewBox='0 0 30 30'
@@ -172,7 +172,7 @@ const CryptoTable = () => {
                 ) : (
                     <div className='w-full min-h-[60vh] h-full flex justify-center items-center'>
                         <div
-                            className='w-8 h-8 border-4 border-cyan rounded-full border-b-gray-200 
+                            className='w-8 h-8 border-4 border-blue rounded-full border-b-gray-200 
                             animate-spin'
                             role='status'
                         />
@@ -181,11 +181,11 @@ const CryptoTable = () => {
                 )}
             </div>
 
-            <div className='flex flex-col md:flex-row items-center justify-between mt-4 capitalize h-[2rem]'>
+            <div className='flex flex-col text-gray-100 md:flex-row items-center justify-between mt-4 capitalize h-[2rem]'>
                 <span>
                     Data Provided by{' '}
                     <a
-                        className='text-cyan'
+                        className='text-blue'
                         href='http://www.coingecko.com'
                         rel='noreferrer'
                         target={'_blank'}
