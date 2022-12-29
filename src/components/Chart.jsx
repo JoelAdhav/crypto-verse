@@ -87,7 +87,7 @@ const Chart = ({ id }) => {
     return (
         <div className='w-full h-[60%]'>
             <ChartComponent data={chartData} currency={currency} type={type} />
-            <div className='flex'>
+            <div className='flex flex-wrap'>
                 <button
                     className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
                         type === 'prices'
@@ -96,7 +96,7 @@ const Chart = ({ id }) => {
                     }`}
                     onClick={() => setType('prices')}
                 >
-                    Prices
+                    Price
                 </button>
                 <button
                     className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
@@ -118,37 +118,38 @@ const Chart = ({ id }) => {
                 >
                     Total volumes
                 </button>
-
-                <button
-                    className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
-                        days === 7
-                            ? 'bg-cyan text-cyan'
-                            : 'bg-gray-200 text-gray-100'
-                    }`}
-                    onClick={() => setDays(7)}
-                >
-                    7d
-                </button>
-                <button
-                    className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
-                        days === 14
-                            ? 'bg-cyan text-cyan'
-                            : 'bg-gray-200 text-gray-100'
-                    }`}
-                    onClick={() => setDays(14)}
-                >
-                    14d
-                </button>
-                <button
-                    className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize ${
-                        days === 30
-                            ? 'bg-cyan text-cyan'
-                            : 'bg-gray-200 text-gray-100'
-                    }`}
-                    onClick={() => setDays(30)}
-                >
-                    30d
-                </button>
+                <div>
+                    <button
+                        className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
+                            days === 7
+                                ? 'bg-cyan text-cyan'
+                                : 'bg-gray-200 text-gray-100'
+                        }`}
+                        onClick={() => setDays(7)}
+                    >
+                        7d
+                    </button>
+                    <button
+                        className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
+                            days === 14
+                                ? 'bg-cyan text-cyan'
+                                : 'bg-gray-200 text-gray-100'
+                        }`}
+                        onClick={() => setDays(14)}
+                    >
+                        14d
+                    </button>
+                    <button
+                        className={`text-sm py-0.5 px-1.5 ml-2 bg-opacity-25 rounded capitalize md:mt-0 mt-2 ${
+                            days === 30
+                                ? 'bg-cyan text-cyan'
+                                : 'bg-gray-200 text-gray-100'
+                        }`}
+                        onClick={() => setDays(30)}
+                    >
+                        30d
+                    </button>
+                </div>
             </div>
         </div>
     );

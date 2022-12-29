@@ -22,17 +22,17 @@ const Filter = () => {
     };
     return (
         <div
-            className='w-full h-12 border-2 border-gray-100 rounded-lg flex items-center justify-between
-        relative'
+            className='w-full h-full lg:h-12 lg:border-2 border-solid border-0 lg:border-gray-100 rounded-lg
+            flex lg:flex-row flex-col lg:items-center align-start lg:justify-between justify-between relative'
         >
             <Search />
-            <div className='flex mr-7'>
+            <div className='flex lg:mr-7 justify-between mt-4 lg:mt-0 sm:flex-row flex-col relative'>
                 <form
-                    className='relative mr-12 flex items-center font-nunito'
+                    className='relative mr-1 md:mr-12 flex items-center font-nunito'
                     onSubmit={handleCurrencySubmit}
                 >
                     <label
-                        className='flex justify-center items-center mr-2 font-bold'
+                        className='flex justify-center sm:text-base items-center mr-2 font-medium sm:font-bold'
                         htmlFor='currency'
                     >
                         currency
@@ -41,8 +41,8 @@ const Filter = () => {
                         ref={currencyRef}
                         type='text'
                         placeholder='usd'
-                        className='w-16 bg-gray-200 rounded pl-2 placeholder:text-gray-100 required outline-0
-                        border border-transparent focus:border-cyan leading-4'
+                        className='w-16 bg-gray-200 rounded p-1 sm:p-0 sm:pl-2 placeholder:text-gray-100 required outline-0
+                        border border-transparent sm:text-base text-sm focus:border-cyan leading-4'
                         name='currency'
                     />
                     <button type='submit' className='ml-1 cursor-pointer'>
@@ -54,23 +54,25 @@ const Filter = () => {
                     </button>
                 </form>
 
-                <label className='relative flex justify-center items-center'>
-                    <span className='font-bold mr-2'>Sort by: </span>
+                <label className='relative flex justify-start mt-4 sm:mt-0 sm:justify-center items-center'>
+                    <span className='sm:font-bold font-medium sm:text-base w-16 text-sm mr-2'>
+                        Sort by{' '}
+                    </span>
                     <select
-                        className='rounded border focus:outline-0 bg-gray-200 text-base pl-2 pr-10 py-0.5 
-                    leading-4 capitalize'
+                        className='rounded focus:outline-0 bg-gray-200 text-sm sm:text-base pl-2 pr-10 
+                        py-1.5 text-transparent appearance-none sm:w-48 w-full leading-4 capitalize'
                         name='soryBy'
                         id=''
                         onClick={handleSort}
                     >
-                        <option value='market_cap_desc'>market_cap_desc</option>
-                        <option value='market_cap_asc'>market_cap_asc</option>
-                        <option value='volume_desc'>volume_desc</option>
-                        <option value='volume_asc'>volume_asc</option>
-                        <option value='id_desc'>id_desc</option>
-                        <option value='id_asc'>id_asc</option>
-                        <option value=' gecko_desc'> gecko_desc</option>
-                        <option value='gecko_asc'>gecko_asc</option>
+                        <option value='market_cap_desc'>market cap desc</option>
+                        <option value='market_cap_asc'>market cap asc</option>
+                        <option value='volume_desc'>volume desc</option>
+                        <option value='volume_asc'>volume asc</option>
+                        <option value='id_desc'>id desc</option>
+                        <option value='id_asc'>id asc</option>
+                        <option value=' gecko_desc'> gecko desc</option>
+                        <option value='gecko_asc'>gecko asc</option>
                     </select>
                     <img
                         className='w-[1rem] h-auto absolute right-1 top-2 pointer-events-none'
@@ -81,7 +83,7 @@ const Filter = () => {
                 <button
                     onClick={reset}
                     className='w-[2rem] ml-4 hover:scale-110 transition-all transition-ease
-                relative'
+                absolute right-0 top-0 sm:relative'
                 >
                     <svg
                         className='w-full h-full fill-cyan'

@@ -18,11 +18,11 @@ const PerPage = () => {
 
     return (
         <form
-            className='relative mr-12 flex items-center font-nunito'
+            className='relative mr-6 flex items-center font-nunito'
             onSubmit={handlePerPage}
         >
             <label
-                className='flex justify-center items-center mr-2 font-bold'
+                className='flex justify-center mr-2 relative items-center'
                 htmlFor='perpage'
             >
                 per_page
@@ -31,10 +31,11 @@ const PerPage = () => {
                 ref={inputRef}
                 type='number'
                 min={1}
-                max={250}
+                max={100}
                 placeholder='10'
-                className='w-16 bg-gray-200 rounded pl-2 placeholder:text-gray-100 required outline-0
-                        border border-transparent focus:border-cyan leading-4'
+                className='w-8 h-6 bg-gray-200 rounded pl-2 placeholder:text-gray-100 required 
+                    outline-0 hover:appereance-none appearance-none border border-transparent 
+                    focus:border-cyan leading-4 text-sm'
                 name='perpage'
             />
             <button type='submit' className='ml-1 cursor-pointer'>
@@ -84,9 +85,9 @@ const Pagination = () => {
 
     if (cryptoData && cryptoData.length >= perPage) {
         return (
-            <div className='flex items-center'>
+            <div className='flex flex-col md:flex-row md:mt-0 mt-4 items-center'>
                 <PerPage />
-                <ul className='flex items-center justify-end text-sm'>
+                <ul className='flex items-center justify-end text-sm sm:mt-0 mt-4'>
                     <li className='flex items-center'>
                         <button
                             onClick={prev}

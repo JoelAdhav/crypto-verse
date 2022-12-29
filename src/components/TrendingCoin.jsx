@@ -9,7 +9,7 @@ const TrendingCoin = ({ data }) => {
 
     return (
         <div
-            className='w-[40%] mb-12 bg-gray-200 rounded-lg p-4 relative cursor-pointer
+            className='lg:w-[40%] sm:w-[60%] w-[80%] mb-12 bg-gray-200 rounded-lg p-4 relative cursor-pointer
     hover:bg-gray-100 hover:bg-opacity-40'
             onClick={() => getCoinDetails(data.id)}
         >
@@ -59,7 +59,8 @@ const TrendingCoin = ({ data }) => {
                     <img
                         src={data.large}
                         alt={data.name}
-                        className='w-[35%] h-auto rounded-full absolute top-2/4 -right-12 -translate-y-2/4'
+                        className='lg:w-[35%] w-[5rem] h-auto rounded-full absolute lg:top-2/4 top-4 
+                        lg:-right-12 -right-6 -translate-y-2/4'
                     />
                 </>
             ) : (
